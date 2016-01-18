@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  div.container
+    div#header FSE Chat Room
+
+    div#internal-container
+      p(id='user')= user
+
+      hr
+
+      div(id='chatList')
+        each row, i in rows
+          div.timestamp= row.timestamp
+          div.author= row.author
+          div.content= row.message
+
+      form#newChat(name="newchat", method="post", action="/")
+        div(class='field')
+            label Content
+            input#inputChat(type="text", placeholder="msg", name="msg")
+        button#postSubmit(type="submit") submit
+
+      form#newChat(name="user", method="post", action="/user")
+        div(class='field')
+            label Username
+            input#inputUsername(type="text", placeholder="user", name="user")
+        button#postSubmit(type="submit") submit
+
+      script(src='/javascripts/btnio.js')

@@ -1,0 +1,49 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+	width: 700px;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgba(200, 200, 200, 1.0);
+}
+
+#header {
+	height: 30px;
+	font-size: 20px;
+	padding: 5px;
+	background-color: rgba(66, 165, 240, 1.00);
+	color: white;
+	width: 690px;
+}
+
+#internal-container {
+	padding: 30px;
+}
+
+#chatList {
+	background-color: rgba(245, 245, 245, 1.0);
+	padding: 10px 10px 10px 10px;
+}
+
+.timestamp {
+	float: right;
+	font-size: 14px;
+	color: rgba(135, 135, 135, 1.0);
+}
+
+.author {
+	font-size: 20px;
+	color: rgba(100, 100, 100, 1.0);
+	margin: 7px 0px 7px 0px;
+}
+
+.content {
+	color: rgba(135, 135, 135, 1.0);
+}
+
+a {
+  color: #00B7FF;
+}
